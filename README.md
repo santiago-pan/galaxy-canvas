@@ -9,3 +9,8 @@ In the project directory, you can run:
 ## Demo
 
 [Santiago Pan Home Page](https://home.pancarneiro.com)
+
+<div>
+<img src="./demo.png" alt="alt text" width="auto" height="400">
+</div>
+

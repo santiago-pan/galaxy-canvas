@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "invalidate": "aws cloudfront create-invalidation --distribution-id E3RUGM4K5NXX9Q --paths / --profile santiago",
+    "deploy": "npm run build && aws s3 sync --acl public-read build/. s3://home.pancarneiro.com/ --profile santiago && npm run invalidate"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +41,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }

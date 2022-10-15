@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CanvasGalaxy from "./CanvasGalaxy";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="overlay">
+        <div className="container">
+          <div className="box">
+            <h1>Santiago Pan Carneiro</h1>
+            <p>This galaxy is randomly generated and rendered on canvas.</p>
+            <a
+              href="https://www.linkedin.com/in/santiagopancarneiro"
+              rel="noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/santiago-pan"
+              rel="noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <CanvasGalaxy></CanvasGalaxy>
     </div>
   );
 }
